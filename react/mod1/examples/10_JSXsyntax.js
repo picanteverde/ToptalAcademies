@@ -9,13 +9,16 @@ let Item = React.createClass({
 
 let List = React.createClass({
   render(){
+    let strValue = "Item1",
+      intVal = 42;
     return (
       <div>
         <h1>This is a list with Items</h1>
         <div>
-          <Item content="Item1"/>
-          <Item content="Item2"/>
-          <Item content="Item3"/>
+          <Item content={strValue}/>
+          <Item content="Item{intVal}"/>
+          {['hello', <span>Wolrd</span>, '!!']}
+          {[1,2,3,4].map(num=><Item key={num} content={'Item' + num} />)}
         </div>
       </div>
     );
