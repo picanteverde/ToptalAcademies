@@ -2,14 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 let Clickable = React.createClass({
+  getInitialState(){
+    return {
+      count: 0
+    }
+  },
   handleClick(e){
-     console.log('Clicked!');
+     this.setState({
+       count: this.state.count + 1
+     });
   },
   render(){
     return (
       <h1
         onClick={this.handleClick}
-      >click me!</h1>);
+      >
+        You clicked {this.state.count} times!
+      </h1>);
   }
 });
 
