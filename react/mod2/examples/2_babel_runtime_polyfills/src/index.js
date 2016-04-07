@@ -1,5 +1,5 @@
 import Employee from './Employee';
-
+import 'babel-polyfill';
 let employees = Array.from(new Array(10), (x,i) => new Employee({id: i}));
 let task = 'sleep';
 employees.forEach(e=>{
