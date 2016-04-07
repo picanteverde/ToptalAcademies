@@ -1,0 +1,11 @@
+{
+  "name": "babel_demo_2",
+  "version": "1.0.0",
+  "description": "showing how babel runtime and polyfills works",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "picanteverde",
+  "license": "ISC"
+}
