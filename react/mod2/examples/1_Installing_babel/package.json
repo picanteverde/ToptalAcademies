@@ -4,7 +4,8 @@
   "description": "demo project to install babel",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "author": "picanteverde",
   "license": "ISC",
