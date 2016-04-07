@@ -1,3 +1,4 @@
+var WebpackNotifierPlugin = require('webpack-notifier');
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -15,5 +16,8 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new WebpackNotifierPlugin({alwaysNotify: true})
+    ],
     'devtool': 'source-map'
 };
