@@ -7,12 +7,15 @@ export let Selectable = React.createClass({
     };
   },
   select(idx){
-    this.setState({
-      selected: idx
-    });
+    //if(this.state.selected !== idx){
+      this.setState({
+        selected: idx
+      });
+    //}
   },
   render(){
     const { props, state } = this;
+    //console.log('rendering');
     return (
       <table>
         {props.rows.map((r, idx) => {
