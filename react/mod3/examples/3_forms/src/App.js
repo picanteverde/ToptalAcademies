@@ -26,7 +26,7 @@ let App = React.createClass({
     this.setState({
       data: data
     }, () => {
-      //this.form.clear();
+      this.form.clear();
     });
   },
   render(){

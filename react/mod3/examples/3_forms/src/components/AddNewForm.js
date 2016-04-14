@@ -34,14 +34,14 @@ export let AddNewForm = React.createClass({
       lastName: e.target.value//.toLowerCase()
     });
   },
-/*
+
   clear(){
     this.setState({
       name: '',
       lastName: ''
     });
   },
-*/
+
   render(){
     const { state } = this;
     return (

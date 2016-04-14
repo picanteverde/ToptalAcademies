@@ -23,12 +23,6 @@ export let Selectable = React.createClass({
   shouldComponentUpdate(nextProps, nextState){
     const { state } = this;
 
-    if(nextState.selected === state.selected){
-      return false;
-    }else{
-      return true;
-    }
-/*
     if(nextState.selected !== state.selected){
       return true;
     }
@@ -36,7 +30,6 @@ export let Selectable = React.createClass({
       return true;
     }
     return false;
-*/
   },
 
   render(){

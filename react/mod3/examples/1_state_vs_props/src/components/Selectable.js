@@ -6,7 +6,7 @@ export let Selectable = React.createClass({
     onSelect: PropTypes.func.isRequired,
     selected: PropTypes.number.isRequired
   },
-  /*
+
   shouldComponentUpdate(nextProps, nextState){
     const { props } = this;
     if(props.selected === nextProps.selected){
@@ -15,7 +15,7 @@ export let Selectable = React.createClass({
       return true;
     }
   },
-  */
+
   render(){
     const { props } = this;
     console.log('Rendering');

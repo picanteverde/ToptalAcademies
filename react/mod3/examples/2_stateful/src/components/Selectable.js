@@ -12,7 +12,7 @@ export let Selectable = React.createClass({
       selected: props.initialSelected
     };
   },
-  /*
+  
   componentWillReceiveProps(next){
     this.setState({
       selected: next.initialSelected
@@ -26,7 +26,7 @@ export let Selectable = React.createClass({
       return true;
     }
   },
-  */
+
   render(){
     const { props, state } = this;
     console.log('Rendering');
