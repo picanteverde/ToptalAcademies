@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 export let Selectable = React.createClass({
-  porpTypes: {
+  propTypes: {
     rows: PropTypes.array.isRequired,
     onSelect: PropTypes.func.isRequired,
     initialSelected: PropTypes.number.isRequired
